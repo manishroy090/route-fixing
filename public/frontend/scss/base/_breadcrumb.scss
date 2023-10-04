@@ -1,0 +1,31 @@
+.breadcrumb-all {
+  background: linear-gradient(
+      270deg,
+      rgba(69, 69, 69, 0.2) 0.28%,
+      rgba(69, 69, 69, 0.2) 45.17%,
+      rgba(69, 69, 69, 0) 83.94%
+    ),
+    url("../images/breadcrumb.jpg");
+  @include background-property;
+  background-attachment: fixed;
+  .breadcrumb-wrapper {
+    padding: 230px 0px 100px 0px;
+    .breadcrumb-heading {
+      color: $secondary-color;
+      font-family: Gilda Display;
+      font-size: 36px;
+      font-weight: 400;
+      letter-spacing: 1.8px;
+    }
+    .breadcrumb {
+      margin-top: 10px !important;
+      font-family: Jost;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.9px;
+      .breadcrumb-item.active {
+        color: $secondary-color;
+      }
+    }
+  }
+}

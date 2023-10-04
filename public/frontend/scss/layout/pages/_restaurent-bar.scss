@@ -1,0 +1,272 @@
+.Restaurant-bar-section {
+  position: relative;
+  .container {
+    width: 60%;
+    margin: 0px auto;
+    @media (max-width: 991px) {
+      width: 80%;
+    }
+    @media (max-width: 767px) {
+      width: 90%;
+    }
+    .text-document-content {
+      li {
+        text-align: left !important;
+      }
+    }
+  }
+
+  .aside-decor {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+.menu-section {
+  padding: 100px 0px;
+  @include background-property;
+  background-attachment: fixed;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(75, 75, 75, 0.65) 0%,
+      rgba(75, 75, 75, 0.65) 100%
+    );
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .menu-wrapper {
+    nav {
+      .nav-tabs {
+        border: none;
+        .nav-link {
+          color: #fff;
+          text-align: center;
+          font-family: Gilda Display;
+          font-size: 30px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 43px;
+          letter-spacing: 0.9px;
+          text-transform: capitalize;
+          border: none !important;
+          text-align: center;
+
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+        .nav-link.active {
+          color: $secondary-color;
+          background-color: transparent;
+          border: none;
+        }
+      }
+    }
+    .tab-content {
+      margin-top: 40px;
+      .menu-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
+        .menu-item {
+          color: white;
+          .item-name-price {
+            @include flex-between;
+            gap: 50px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted white;
+            font-family: Gilda Display;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.6px;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+          }
+          span {
+            text-align: center;
+            font-family: Jost;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.64px;
+          }
+        }
+      }
+    }
+  }
+}
+.owl-menu-category {
+  position: relative;
+  .owl-stage-outer {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50% !important;
+      border: 1px solid white !important;
+      padding: 0.625rem !important;
+      @include flex-center;
+      background-color: transparent !important;
+      i {
+        color: $white;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .owl-prev {
+      left: 0;
+    }
+    .owl-next {
+      right: 0;
+    }
+  }
+}
+.today-specal {
+  position: relative;
+  .right-side-decor {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    figure {
+      max-width: 200px;
+      pointer-events: none;
+      @media (max-width: 1440px) {
+        max-width: 100px;
+      }
+    }
+  }
+}
+
+.table-booking {
+  .section-header-wrapper {
+    margin-bottom: 30px;
+  }
+  .lunch-dinner-time {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .time-table {
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.64px;
+      display: flex;
+      flex-direction: column;
+      padding-right: 40px;
+      gap: 5px;
+      border-right: 1px dotted $secondary-color;
+      margin-right: 50px;
+      &:last-child {
+        border-right: none;
+        padding-right: 0px;
+        margin-right: 0px;
+      }
+      .heading {
+        color: #000;
+        font-family: Gilda Display;
+        font-size: 24px;
+      }
+      .days {
+        color: #454545;
+      }
+      .time {
+        color: $secondary-color;
+      }
+    }
+  }
+  .support-contact-information {
+    margin-top: 30px;
+    .heading {
+      color: #000;
+      font-family: Gilda Display;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 43px;
+      letter-spacing: 0.72px;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    ul {
+      li {
+        padding-bottom: 20px;
+        .contact-details {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          .icon {
+            color: $secondary-color;
+            font-size: 30px;
+            width: 30px;
+          }
+          .detail {
+            color: #000;
+            font-family: Gilda Display;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 1.4px;
+            .wrapper {
+              display: flex;
+              gap: 5px;
+              color: $secondary-color !important;
+              font-family: Jost;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+              letter-spacing: 1.8px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-booking-form {
+    border: 1px solid #d9d9d9;
+    padding: 30px;
+  }
+}
+.ui-datepicker .ui-datepicker-header {
+  background: $secondary-color !important;
+  .ui-datepicker-title {
+    color: white !important;
+  }
+}
+.ui-widget-header .ui-icon {
+  background-image: url("../images/ui-icons_444444_256x240.png") !important;
+}
+
+.ui-timepicker-list {
+  li {
+    display: block;
+  }
+}

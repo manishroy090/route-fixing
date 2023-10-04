@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://127.0.0.1:8002/home</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>1.00</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/hamro-qr-menu</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/subscription-plans</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/blogs</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/video-tutorials</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/become-a-merchant</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/user/login</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+                  <url>
+            <loc>http://127.0.0.1:8002/blogs/enhancing-restaurant-efficiency-instalacarte-and-loyverse</loc>
+            <lastmod>2023-09-17</lastmod>
+            <priority>0.80</priority>
+         </url>
+               <url>
+            <loc>http://127.0.0.1:8002/blogs/lorem-ipsum-dolor-sit-amet-consectetur-libero-volutpat-egestas-adipiscing-vivamus-volutpat</loc>
+            <lastmod>2023-09-17</lastmod>
+            <priority>0.80</priority>
+         </url>
+               <url>
+            <loc>http://127.0.0.1:8002/blogs/why-should-restaurants-create-a-qr-menu-for-covid-19</loc>
+            <lastmod>2023-09-17</lastmod>
+            <priority>0.80</priority>
+         </url>
+         
+   <url>
+      <loc>http://127.0.0.1:8002/clients</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/help-center</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/report</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+   <url>
+      <loc>http://127.0.0.1:8002/contact-us</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.80</priority>
+   </url>
+
+                  <url>
+            <loc>http://127.0.0.1:8002/page/terms-of-use</loc>
+            <lastmod>2023-09-17</lastmod>
+            <priority>0.80</priority>
+         </url>
+               <url>
+            <loc>http://127.0.0.1:8002/page/privacy-policy</loc>
+            <lastmod>2023-09-17</lastmod>
+            <priority>0.80</priority>
+         </url>
+               <url>
+            <loc>http://127.0.0.1:8002/page/cookies-policy</loc>
+            <lastmod>2023-09-17</lastmod>
+            <priority>0.80</priority>
+         </url>
+         
+   <url>
+      <loc>http://127.0.0.1:8002/user/forgot-password</loc>
+      <lastmod>2023-09-17</lastmod>
+      <priority>0.64</priority>
+   </url>   
+
+</urlset>

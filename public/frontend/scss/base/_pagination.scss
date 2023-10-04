@@ -1,0 +1,21 @@
+.pagination-wrapper{
+    margin-top: 2.25rem;
+    color: $primary-color;
+    .pagination {
+        gap: 10px;
+        .page-item {
+            .page-link{
+                border-radius: 0;
+                border: 1px solid $primary-color;
+                font-weight: 500;
+                @include font-roboto;
+            }
+        }
+        .active{
+            color: $white;
+            .page-link{
+                background-color: $primary-color !important;
+            }
+        }
+    }
+}

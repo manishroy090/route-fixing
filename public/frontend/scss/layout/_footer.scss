@@ -1,0 +1,75 @@
+footer {
+  padding-top: 90px;
+  background: url("../images/footer-background.png"), rgba(217, 217, 217, 0.15);
+  @include background-property;
+  .column-heading {
+    color: #000;
+    font-family: Gilda Display;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.8px;
+    margin-bottom: 20px;
+  }
+  ul {
+    li {
+      display: block;
+      padding-bottom: 5px;
+      &:last-child {
+        padding-bottom: 0px;
+      }
+      a {
+        color: #454545 !important;
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        &:hover {
+          color: $secondary-color !important;
+        }
+      }
+    }
+  }
+  .association-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .association-card {
+      height: 100px;
+      img {
+        object-fit: scale-down;
+      }
+    }
+  }
+  .social-media {
+    ul {
+      li {
+        a {
+          border: 1px solid $secondary-color;
+          color: $secondary-color !important;
+        }
+      }
+    }
+  }
+  .copy-right {
+    margin-top: 40px;
+    border-top: 1px solid #747474;
+    padding: 20px 0px;
+    .wrapper {
+      @include flex-between;
+      a {
+        color: $secondary-color !important;
+        font-family: Gilda Display;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        &:hover{
+            color: $primary-color !important;
+        }
+      }
+    }
+  }
+}

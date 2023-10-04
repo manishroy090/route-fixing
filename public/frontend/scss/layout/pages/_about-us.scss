@@ -1,0 +1,57 @@
+// about-us
+.home-about-us {
+    .multi-img {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 4rem;
+      gap: 30px;
+      figure:nth-child(even) {
+        margin-bottom: 100px !important;
+      }
+      figure:nth-child(odd) {
+        margin-top: 100px !important;
+      }
+    }
+  }
+  // restaurent-bar
+.restaurent-bar {
+    @include background-property;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        rgba(1, 1, 1, 0.5) 0%,
+        rgba(1, 1, 1, 0.5) 100%
+      );
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      .text-document-content {
+        p,
+        li,
+        span,
+        div {
+          text-align: center;
+          color: white;
+        }
+      }
+      .custom-button {
+        margin: 40px auto 0 !important;
+        width: fit-content;
+        a {
+          background-color: white;
+          color: $secondary-color !important;
+        }
+      }
+    }
+  }

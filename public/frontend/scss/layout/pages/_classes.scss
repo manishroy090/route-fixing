@@ -1,0 +1,32 @@
+.classes-page{
+    .section-main-heading{
+        margin-bottom: 2.25rem;
+    }
+    figure{
+        position: relative;
+        text-align: -webkit-right;
+        img{
+            width: 85% !important;
+        }
+        figcaption{
+            position: absolute;
+            bottom: 10%;
+            left: 3%;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 40px;
+            letter-spacing: 0.03em;
+            filter: drop-shadow(0px 0px 7px rgba(37, 37, 37, 0.5));
+            a{
+                padding: 27px 61px 26px 35px;
+                color: $primary-color !important;
+                background-color: $white;
+                // clip-path: polygon(0% 0%, 85.6% 0%, 100% 100%, 0% 100%);
+                clip-path: polygon(0% 0%, 78% 0%, 93% 100%, 0% 100%);
+                &:hover{
+                    color: $secondary-color !important;
+                }
+            }
+        }
+    }
+}

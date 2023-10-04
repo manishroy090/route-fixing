@@ -1,0 +1,75 @@
+.form-element {
+  input,
+  select {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 7px 10px;
+    border-radius: 0px;
+    background-color: transparent;
+    &:focus-visible {
+      outline: 1px solid $secondary-color !important;
+    }
+  }
+  input[type="checkbox"] {
+    width: 1em !important;
+    height: 1em;
+    border: 1px solid $secondary-color;
+    color: white;
+    display: inline-block !important;
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+    border-radius: 0px;
+    &:focus-visible {
+      outline: 1px solid $secondary-color !important;
+    }
+  }
+  input,
+  textarea {
+    &::placeholder {
+      color: #747474;
+      font-family: Jost;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 1.12px;
+    }
+  }
+  label {
+    color: #747474;
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1.12px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    a {
+      color: $secondary-color !important;
+      font-weight: 600;
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+  .error-message {
+    color: rgb(223 35 35);
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1.12px;
+    margin-top: 3px;
+  }
+  .form-select, .form-control{
+    &:focus{
+      border-color: $secondary-color !important;
+      box-shadow: 0 0 0 0.05rem #f3bdc4;
+    }
+  }
+}

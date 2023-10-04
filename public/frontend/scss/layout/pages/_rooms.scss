@@ -1,0 +1,439 @@
+.room-cards {
+  position: relative;
+  height: 500px;
+  &::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+    z-index: 1;
+  }
+  .room-cover {
+    height: 100%;
+  }
+  .booked-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    border: 1px solid #e0d4d4;
+    padding: 10px;
+    color: #fff;
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 4.96px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr;
+    background-color: $secondary-color;
+    // transform: rotate(270deg);
+  }
+  .rooms-details {
+    position: absolute;
+    bottom: 30px;
+    padding: 0px 20px;
+    color: white;
+    z-index: 2;
+    .price-tag {
+      color: #fff;
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+    .room-tittle {
+      color: #fff;
+      font-family: Jost;
+      font-size: 22px !important;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -10px;
+        height: 1px;
+        width: 50%;
+        background: #fff;
+        transition: all 500ms linear;
+      }
+    }
+  }
+  &:hover {
+    .room-tittle {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.aside-wrapper-sticky {
+  position: sticky;
+  top: 50px;
+}
+.Check-Availability-form {
+  .custom-button {
+    a,
+    button {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+.room-search {
+  background-color: $secondary-color;
+  padding: 40px 0px;
+  .form-control,
+  .form-select {
+    border-radius: 0 !important;
+  }
+  .custom-button {
+    a,
+    button {
+      background-color: white;
+      color: $secondary-color !important;
+      white-space: nowrap;
+    }
+  }
+}
+.room-booking-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .section-header-wrapper {
+    margin-bottom: 10px !important;
+  }
+  figure {
+    max-height: 300px;
+  }
+  .hotel-name-location {
+    .name {
+      color: #000;
+      font-family: Gilda Display;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 1.44px;
+    }
+    .location {
+      color: #747474;
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.8px;
+      i {
+        color: $secondary-color;
+      }
+    }
+  }
+  .stay-details {
+    padding: 15px 0px;
+    border-top: 1px solid rgba(217, 217, 217, 0.63);
+    border-bottom: 1px solid rgba(217, 217, 217, 0.63);
+    table {
+      margin-bottom: 0 !important;
+      tr {
+        th,
+        td {
+          border: 0;
+          color: #454545;
+          font-family: Jost;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.6px;
+          padding: 3px 0px;
+        }
+        th {
+          font-weight: 500;
+        }
+        td {
+          &:last-child {
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+  .selected-rooms {
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.63);
+    ul {
+      li {
+        padding-bottom: 15px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+        .room-details {
+          .name-price {
+            color: #454545;
+            font-family: Jost;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 1.08px;
+            @include flex-between;
+            .name {
+              font-weight: 500;
+            }
+          }
+          .include {
+            margin-top: 5px;
+            ul {
+              li {
+                color: #747474;
+                font-family: Jost;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 22px;
+                letter-spacing: 0.98px;
+                padding-bottom: 5px;
+                &:last-child {
+                  padding-bottom: 0;
+                }
+                i {
+                  color: $secondary-color;
+                  padding-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .price-summary {
+    .wrapper {
+      @include flex-between;
+      color: #454545;
+      font-family: Jost;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 1.08px;
+      .total-price {
+        font-weight: 400;
+      }
+    }
+    .price-info {
+      color: #ed223c;
+      font-family: Jost;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.98px;
+    }
+  }
+  .custom-button {
+    a {
+      width: fit-content;
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
+
+.wizard-section {
+  .form-wizard {
+    select {
+      position: relative;
+      appearance: auto !important;
+    }
+    .form-wizard-header {
+      text-align: center;
+    }
+    .form-wizard-submit,
+    .form-wizard-next-btn,
+    .form-wizard-previous-btn {
+      background: $secondary-color;
+      color: #fff !important;
+      text-align: justify;
+      font-family: Jost;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 27px;
+      padding: 5px 20px;
+      text-align: center;
+      width: 150px;
+    }
+
+    .wizard-fieldset {
+      display: none;
+      .room-card {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: center;
+        border: 1px solid rgba(217, 217, 217, 0.63);
+        background: #fff;
+        .room-cover {
+          figure {
+            max-height: 200px;
+          }
+        }
+        .room-details {
+          padding: 15px;
+          .name {
+            color: #000;
+            font-family: Gilda Display;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0.48px;
+          }
+          .room-attribute {
+            margin: 10px 0px 20px 0px;
+            ul {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 10px;
+              li {
+                color: #747474;
+                font-family: Jost;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: 0.4px;
+              }
+            }
+          }
+          .custom-button {
+            a {
+              color: #fff;
+              text-align: justify;
+              font-family: Jost;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 27px;
+              letter-spacing: 0.64px;
+            }
+          }
+        }
+      }
+    }
+    .wizard-fieldset.show {
+      display: block !important;
+    }
+    .wizard-form-error {
+      display: none;
+      position: absolute;
+      border-bottom: 2px solid #d70b0b;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 50px;
+      width: 100%;
+      pointer-events: none;
+    }
+    .form-control {
+      font-weight: 400;
+      height: auto !important;
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #d9d9d9;
+      background-color: transparent;
+      border-radius: 0px !important;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+    .form-group {
+      position: relative;
+      margin: 10px 0;
+    }
+    .button-group {
+      margin-top: 25px;
+      @include flex-between;
+    }
+    
+    .form-wizard-steps {
+      margin: 0px 0px 30px 0 !important;
+      display: flex;
+      gap: 5px;
+      li {
+        display: block;
+        flex: 1;
+        padding: 10px;
+        color: #454545;
+        font-family: Jost;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.4px;
+        border: 1px solid $secondary-color;
+      }
+      li.active {
+        background-color: $secondary-color;
+        color: white;
+      }
+      li.activated {
+        background-color: $secondary-color;
+        color: white;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .wizard-content-left {
+      height: auto;
+    }
+  }
+}
+
+.fieldset-wrapper {
+  border: 1px solid #e0d4d4;
+  padding: 30px;
+  .heading {
+    color: #a9505b;
+    font-family: Gilda Display;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+  }
+  .terms-condition {
+    display: flex;
+    gap: 10px;
+    input {
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      border: 1px solid #e0e0e7;
+    }
+    label {
+      color: #a9505b;
+      text-align: justify;
+      font-family: Jost;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0.64px;
+      a {
+        color: #385cd9 !important;
+        font-weight: 600;
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
+    }
+    .error {
+      color: $primary-color;
+      font-size: 14px;
+      margin-top: 3px;
+    }
+  }
+}

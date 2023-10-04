@@ -1,0 +1,170 @@
+header {
+  position: absolute;
+  top: 30px;
+  z-index: 99;
+  width: 100%;
+  .navigation-bar {
+    @include flex-between;
+    background-color: white;
+    border-radius: 71px;
+    padding: 30px 0px;
+    .logo {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      @include vertical-center;
+      z-index: 2;
+      padding: 5px;
+      filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+      background-color: white;
+      figure {
+        img {
+          object-fit: scale-down;
+        }
+      }
+    }
+    nav {
+      margin-left: 10rem;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        li {
+          color: #000;
+          font-family: Gilda Display;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.18px;
+          a {
+            &:hover {
+              color: $secondary-color !important;
+            }
+          }
+        }
+        .active {
+          color: $secondary-color !important;
+        }
+      }
+    }
+    .hamburger-menu {
+      margin-right: 1.5rem;
+      cursor: pointer;
+    }
+  }
+}
+.dimheader {
+  z-index: 9;
+}
+.sidenav.open {
+  right: 0;
+  opacity: 1;
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 9999999999;
+  background: white;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  opacity: 0;
+  .side-nav-close-btn {
+    padding: 30px 0px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 30px;
+    a {
+      display: inline-block;
+      padding: 5px 10px 2px 10px;
+      background-color: $secondary-color;
+      color: white !important;
+      font-size: 20px;
+      line-height: 24px;
+      cursor: pointer;
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+  .side-nav-body {
+    padding: 0px 30px 30px;
+    height: calc(100vh - 153px);
+    overflow-y: auto;
+    @include scroll-bar;
+    .navigation-links {
+      ul {
+        margin-left: 20px !important;
+        li {
+          display: block;
+          padding-bottom: 10px;
+          &:last-child {
+            padding-bottom: 0;
+          }
+          a {
+            color: #000;
+            font-family: Gilda Display;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.18px;
+            &:hover {
+              color: $secondary-color !important;
+            }
+            &::before {
+              content: "\f111";
+              font-family: "Font Awesome 5 free";
+              font-weight: 900;
+              font-size: 14px;
+              padding-right: 10px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+    .side-nav-heading {
+      color: #000;
+      text-align: justify;
+      font-family: Gilda Display;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0.96px;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .contact-information {
+      margin-top: 60px;
+      ul{
+        margin-left: 20px !important;
+      }
+    }
+  }
+
+  .side-nav-footer {
+    background-color: $secondary-color;
+    color: white;
+    padding: 15px 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .wrapper {
+      @include flex-between;
+      span {
+        color: #fff;
+        font-family: Jost;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+        white-space: nowrap;
+      }
+    }
+  }
+}

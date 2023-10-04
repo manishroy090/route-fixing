@@ -1,0 +1,73 @@
+// service
+.services-section {
+  .service-card {
+    padding: 40px 20px;
+    border: 1px solid #d9d9d9;
+    .service-icon-box {
+      @include flex-center;
+      img {
+        object-fit: scale-down !important;
+        height: 70px;
+      }
+    }
+    .service-tittle {
+      color: #3a3636 !important;
+      font-family: Gilda Display;
+      font-size: 24px !important;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 3.12px;
+      margin-top: 10px !important;
+      text-align: center;
+    }
+    &:hover {
+      .service-tittle {
+        color: $secondary-color !important;
+      }
+    }
+  }
+}
+.aside-links-wrapper {
+  padding: 30px;
+  border: 1px solid #d9d9d9;
+  .section-header-wrapper {
+    margin-bottom: 20px;
+    .section-sub-heading {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .section-main-heading {
+      font-size: 24px !important;
+      line-height: 30px;
+    }
+  }
+  ul {
+    li {
+      display: block;
+      padding-bottom: 8px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      a {
+        color: #3A3636;
+        font-family: Jost;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.64px;
+        &:hover {
+          color: $secondary-color !important;
+        }
+        &::before {
+          content: "\f111";
+          font-family: "Font Awesome 5 free";
+          font-weight: 900;
+          font-size: 12px;
+          padding-right: 10px;
+          line-height: 24px;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

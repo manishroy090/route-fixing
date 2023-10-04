@@ -1,0 +1,84 @@
+.banner {
+  .owl-banner {
+    .owl-dots {
+      position: absolute;
+      bottom: 2%;
+      left: 50%;
+      transform: translate( -50%, -2%);
+    }
+    figure {
+      height: 85vh;
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+.rooms-suits {
+  background: #f6f6f6;
+  padding: 70px 0;
+  .contact-details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    .icon {
+      color: $secondary-color;
+      font-size: 50px;
+    }
+    .detail {
+      font-family: Jost;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 120% */
+      letter-spacing: 1.4px;
+      .wrapper {
+        display: flex;
+        gap: 5px;
+        a {
+          color: $secondary-color !important;
+          font-family: Jost;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 43px; /* 179.167% */
+          letter-spacing: 0.72px;
+        }
+      }
+    }
+  }
+}
+
+// testimonial
+.testimonial {
+  .owl-testimonial {
+    .testimonial-card {
+      margin: 10px;
+      border: 1px solid #e0d4d4;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .fa-quote-left {
+        font-size: 40px;
+        color: $secondary-color;
+      }
+      .name {
+        color: #000;
+        text-align: justify;
+        font-family: Gilda Display;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.8px;
+        &::before {
+          content: "- ";
+        }
+      }
+    }
+  }
+}
+
